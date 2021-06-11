@@ -57,7 +57,7 @@ function App() {
 
   return (
     <>
-      <Navbar className="nav" variant="dark">
+      <Navbar className="nav fixed-top" variant="dark">
         <Navbar.Brand className="logo">MacShop</Navbar.Brand>
         {cartItems.length === 0 ? (
           <RiShoppingCartLine
@@ -71,7 +71,7 @@ function App() {
           />
         )}
       </Navbar>
-      <Container className="mt-5">
+      <Container className="shop">
         <Button onClick={handleChange}>{buttonText}</Button>
         <Row>
           {filteredItems.map((item) => {
@@ -82,8 +82,8 @@ function App() {
                     xs={8}
                     className="p-3 d-flex flex-column justify-content-around"
                   >
-                    <div className="d-flex align-items-center">
-                      <h2 className="d-inline">{item.name}</h2>
+                    <div className="d-flex align-items-center mb-3">
+                      <h3 className="d-inline mb-0">{item.name}</h3>
                       <div>
                         {item.isFavorited ? (
                           <AiFillHeart
@@ -104,7 +104,7 @@ function App() {
                       Price: <strong>{item.price}</strong>$
                     </h5>
                   </Col>
-                  <Col xs={3} className="p-3">
+                  <Col xs={3} className="p-3 d-flex flex-column align-items-center justify-content-around">
                     <Media>
                       <img
                         width={90}
@@ -114,7 +114,7 @@ function App() {
                       />
                     </Media>
                     <Button
-                      className="mt-5 w-100 d-flex align-items-center justify-content-around"
+                      className="w-100 d-flex align-items-center justify-content-around"
                       onClick={() => addToCart(item)}
                     >
                       {" "}

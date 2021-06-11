@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap");
+html,
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -12,9 +13,9 @@ body {
 
 /* navBar */
 
-.nav{
+.nav {
   background: #ccebff;
-  padding: 1em 2em;
+  padding: 0.6em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,27 +26,34 @@ body {
   font-weight: 600;
   color: blue !important;
 }
-.cartIcon{
+.cartIcon {
   font-size: 1.6em;
   cursor: pointer;
 }
 
 /* products */
+.shop {
+  margin-top: 100px;
+}
 
-.favorite-icon{
+.favorite-icon {
   color: #ff9999;
   font-size: 1.7em;
   margin-left: 0.5em;
   cursor: pointer;
 }
+@media screen  and (max-width: 600px) {
+  .btn-add-icon {
+    display: none;
+  }
+}
 
 /* cart */
 
-.cartActions{
+.cartActions {
   cursor: pointer;
 }
 
-.spinner{
+.spinner {
   margin-right: 0.6em;
 }
-
