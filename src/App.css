@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #eee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* navBar */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{
+  background: #ccebff;
+  padding: 1em 2em;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: blue !important;
+}
+.cartIcon{
+  font-size: 1.6em;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* products */
+
+.favorite-icon{
+  color: #ff9999;
+  font-size: 1.7em;
+  margin-left: 0.5em;
+  cursor: pointer;
 }
+
+/* cart */
+
+.cartActions{
+  cursor: pointer;
+}
+
+.spinner{
+  margin-right: 0.6em;
+}
+
